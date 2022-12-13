@@ -1,11 +1,19 @@
 package com.example.demo.member;
 
+import com.example.demo.AppConfig;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class MemberServiceTest {
 
-    private final MemberService memberService = new MemberServiceImpl();
+    MemberService memberService;
+
+    @BeforeEach
+    public void beforeEach(){
+        AppConfig appConfig = new AppConfig();
+        appConfig.memberService();
+    }
 
     @Test
     void 회원가입(){
