@@ -10,8 +10,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MemberApp {
     public static void main(String[] args) {
         //자바 사용
-//        AppConfig appConfig = new AppConfig();
-//        MemberService memberService = appConfig.memberService();
+//        AppConfig appConfig.xml = new AppConfig();
+//        MemberService memberService = appConfig.xml.memberService();
 
 
         // 스프링 사용
